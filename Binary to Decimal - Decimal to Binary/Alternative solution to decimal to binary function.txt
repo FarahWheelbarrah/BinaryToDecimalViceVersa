@@ -1,0 +1,22 @@
+bool has1 = false;
+            int[] powersof2 = { 128, 64, 32, 16, 8, 4, 2, 1 };
+            Console.Write("Binary value: ");
+            foreach (int power in powersof2)
+            {
+
+                if (number >= power)
+                {
+                    number -= power;
+                    Console.Write(1);
+                    has1 = true;
+                }
+                else if (has1 == true)
+                    Console.Write(0);
+                
+            }
+
+            if (has1 == false)
+               Console.Write(0);
+
+
+            Console.WriteLine();
